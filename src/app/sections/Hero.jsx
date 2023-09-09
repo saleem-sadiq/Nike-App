@@ -6,6 +6,7 @@ import Button from "../components/Button"
 import Image from "next/image"
 import ShoeCard from "../components/ShoeCard"
 import { bigShoe1 } from "../../../public/assets/images"
+import { arrowRight } from "../../../public/assets/icons"
 
 const Hero = () => {
   const [bigShoeImg, setbigShoeImg] = useState(bigShoe1)
@@ -19,7 +20,7 @@ const Hero = () => {
           <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover Stylish Nike Arrivals, quality comfort, and innovation for your active life.</p>
-        <Button label="Shop Now" iconUrl={'/assets/icons/arrow-right.svg'} />
+        <Button label="Shop Now" iconUrl={arrowRight} />
         <div className="flex justify-start items-start flex-wrap mt-20 gap-16 w-full">
           {statistics.map((stat) => (
             <div key={stat.label}>
